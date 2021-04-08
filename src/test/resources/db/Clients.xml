@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <tscr_bill id="1" name="john" surname="lennon" email="juan@ever.es" create_on="2018-07-15" />
+    <tscr_bill id="2" name="paul" surname="lennon" email="jose@ever.es" create_on="2018-07-15" />
+    <tscr_bill id="3" name="george" surname="mccartney" email="jose@ever.es" create_on="2018-07-15" />
+    <tscr_bill id="4" name="revolver" surname="harrison" email="jose@ever.es" create_on="2018-07-15" />
+    <tscr_bill id="5" name="ringo" surname="starr" email="jose@ever.es" create_on="2018-07-15" />
+    <tscr_bill id="5" name="julian" surname="lennon" email="jose@ever.es" create_on="2018-07-15" />
+</dataset>

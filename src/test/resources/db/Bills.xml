@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <tscr_bill id="1" description="sgt peppers" fk_client="1" />
+    <tscr_bill id="2" description="abbey road" fk_client="1" />
+    <tscr_bill id="3" description="white album" fk_client="1" />
+    <tscr_bill id="4" description="revolver" fk_client="2" />
+    <tscr_bill id="5" description="help" fk_client="3" />
+    <tscr_bill id="5" description="let it be" fk_client="3" />
+    <tscr_bill id="6" description="please please me" fk_client="1" />
+</dataset>

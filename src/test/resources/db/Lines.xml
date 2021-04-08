@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <tscr_line id="1" quantity="2" fk_product="1" fk_bill="1" create_on="2018-07-15" />
+    <tscr_line id="2" quantity="4" fk_product="2" fk_bill="1" create_on="2018-07-15" />
+</dataset>

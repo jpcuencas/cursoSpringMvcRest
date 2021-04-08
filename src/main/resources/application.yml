@@ -1,0 +1,74 @@
+spring:
+  profiles.active: dev
+  security:
+    user:
+      password: 1234
+      name: Admin
+    basic:
+      enabled: true
+      authorize-mode: NONE
+  #security.basic.enabled=false
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+
+  messages:
+    basename: i18n/messages
+
+server:
+  port: 9090
+  servlet:
+    context-path: /api
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include: health,info,env,metrics
+
+cantidad:
+  peliculas:
+    cantidad: 33
+
+logging:
+  path: /var/logs/
+  file: miLog.log
+
+---
+spring:
+  profiles: dev
+logging:
+  file: logs/dev_app.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    guru.springframework.controllers: DEBUG
+    org.hibernate: DEBUG
+---
+spring:
+  profiles: production
+logging:
+  file: logs/production_app.log
+  pattern:
+    file: "%d %-5level [%thread] %logger{0} : %msg%n"
+  level:
+    root: INFO
+    org.springframework.web: WARN
+    guru.springframework.controllers: WARN
+    org.hibernate: WARN
+
+
+
